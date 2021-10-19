@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/icon_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+
+    <!--        Todo 要改此圖標-->
+    <item
+        android:id="@+id/icon_search"
+        android:enabled="true"
+        android:icon="@drawable/navigation_quest"
+        android:title="@string/task"/>
+
+    <item
+        android:id="@+id/icon_message"
+        android:enabled="true"
+        android:icon="@drawable/ic_message"
+        android:title="@string/message"/>
+    <item
+        android:id="@+id/icon_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="@string/user"/>
+
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskDetailActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+
+    <fragment
+        android:name="com.example.my_first_application.TaskDetailFragment"
+        android:id="@+id/task_detail_frag"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="550sp"
+        >
+    </fragment>
+
+    <LinearLayout
+        android:id="@+id/task_state_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_detail_frag"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</RelativeLayout>

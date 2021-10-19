@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_toolbar_title">老人長照</string>
+    <string name="homePage_toolbar_title">所有任務</string>
+    <string name="showTask_toolbar_title">我的任務</string>
+    <string name="releaseTask_toolbar_title">創建任務</string>
+    <string name="profile_toolbar_title">會員中心</string>
+    <string name="email_address">電子郵件帳號</string>
+    <string name="password">密碼</string>
+    <string name="password_again">再次輸入密碼</string>
+    <string name="login">登入</string>
+    <string name="remember_your_password">記住密碼</string>
+    <string name="forgot_your_password">忘記密碼?</string>
+    <string name="or">或</string>
+    <string name="sign_up">註冊</string>
+    <string name="log_in">登入</string>
+    <string name="show_task_title">任務標題</string>
+    <string name="show_task_type">任務類型</string>
+    <string name="show_task_status">任務時間</string>
+    <string name="show_task_address">任務地址</string>
+    <string name="show_task_date">任務日期</string>
+    <string name="show_task_spinner_type">類型</string>
+    <string name="show_task_spinner_address">區域</string>
+
+    <!-- Profile 頁面 -->
+    <string name="profile_memberID">你好，新會員</string>
+    <string name="profile_member_point">點數剩餘</string>
+    <string name="profile_member_points_number">654321</string>
+    <string name="profile_user_mode">使用者模式切換</string>
+    <string name="profile_points_record">點數紀錄</string>
+    <string name="profile_logout">登出</string>
+
+    <!-- 暫時的 button，為了進入 Login 頁面 -->
+    <string name="click_to_login">前往登入介面</string>
+    <string name="click_to_sign_up">前往註冊介面</string>
+    <string name="click_to_release_task">前往發布介面</string>
+    <string name="click_to_show_task">前往顯示任務介面</string>
+    <string name="click_to_main_page">前往主介面</string>
+    <string name="click_to_profile_page">前往個人介面</string>
+
+    <!-- bottom navigation bar -->
+    <string name="home">主頁</string>
+    <string name="search">搜尋</string>
+    <string name="message">訊息</string>
+    <string name="user">個人</string>
+    <string name="task">任務</string>
+
+    <!-- Login 頁面第三方平台按鈕 -->
+    <string name="login_with_facebook">Facebook</string>
+    <string name="login_with_google">Google</string>
+    <string name="sign_facebook">用 Facebook 登入</string>
+    <string name="sign_google">用 Google 登入</string>
+    <string name="sign_mail">用 Email 登入</string>
+
+    <string name="nickname">暱稱</string>
+
+    <!-- fragment release task -->
+    <string name="releaseTask_title">任務標題</string>
+    <string name="releaseTask_userID">發布者</string>
+    <string name="releaseTask_userID_content">releaseUserID</string>
+    <string name="receiveTask_userID">接收者</string>
+    <string name="receiveTask_userID_content">receiveUserID</string>
+    <string name="releaseTask_salary">任務薪水</string>
+    <string name="releaseTask_salary_content">salary</string>
+    <string name="releaseTask_taskAddress">任務地點</string>
+    <string name="releaseTask_taskAddress_content">taskAddress</string>
+    <string name="releaseTask_message">任務內容</string>
+    <string name="releaseTask_message_content">message</string>
+
+
+    <!-- task detail -->
+    <string name="task_content">任務內容</string>
+    <string name="request_users">申請者</string>
+
+</resources>

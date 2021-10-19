@@ -1,0 +1,74 @@
+<resources>
+    <string name="main_toolbar_title">xxx</string>
+    <string name="homePage_toolbar_title">All Task</string>
+    <string name="showTask_toolbar_title">My Task</string>
+    <string name="releaseTask_toolbar_title">Create new task</string>
+    <string name="profile_toolbar_title">Profile</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="password_again">Confirm Password</string>
+    <string name="login">LOGIN</string>
+    <string name="remember_your_password">Remember me</string>
+    <string name="forgot_your_password">Forgot your Password?</string>
+    <string name="or">OR</string>
+    <string name="sign_up">Register</string>
+    <string name="log_in">Login</string>
+    <string name="show_task_title">Task Title</string>
+    <string name="show_task_type">Task type</string>
+    <string name="show_task_status">Task time</string>
+    <string name="show_task_address">Task address</string>
+    <string name="show_task_date">Task Date</string>
+    <string name="show_task_spinner_type">Task Type</string>
+    <string name="show_task_spinner_address">Address</string>
+
+    <!-- Profile 頁面 -->
+    <string name="profile_memberID">Hi, new here</string>
+    <string name="profile_member_point">Points remaining</string>
+    <string name="profile_member_points_number">654321</string>
+    <string name="profile_user_mode">Switch User Mode</string>
+    <string name="profile_points_record">Points Record</string>
+    <string name="profile_logout">Log Out</string>
+
+    <!-- 暫時的 button，為了進入 Login 頁面 -->
+    <string name="click_to_login">Click to Login page</string>
+    <string name="click_to_sign_up">Click to Sign Up page</string>
+    <string name="click_to_release_task">Click to Release Task</string>
+    <string name="click_to_show_task">Click to Show Task</string>
+    <string name="click_to_main_page">Click to Main Page</string>
+    <string name="click_to_profile_page">Click to Profile Page</string>
+
+    <!-- bottom navigation bar -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="message">Message</string>
+    <string name="user">User</string>
+    <string name="task">Task</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Login 頁面第三方平台按鈕 -->
+    <string name="login_with_facebook">Facebook</string>
+    <string name="login_with_google">Google</string>
+    <string name="sign_mail">Login with Email</string>
+    <string name="sign_facebook">Login with Facebook</string>
+    <string name="sign_google">Login with Google</string>
+    <string name="nickname">nickname</string>
+
+    <!-- fragment release task -->
+    <string name="releaseTask_title">Title</string>
+    <string name="releaseTask_userID">Release User</string>
+    <string name="releaseTask_userID_content">releaseUserID</string>
+    <string name="receiveTask_userID">Receive User</string>
+    <string name="receiveTask_userID_content">receiveUserID</string>
+    <string name="releaseTask_salary">Salary</string>
+    <string name="releaseTask_salary_content">salary</string>
+    <string name="releaseTask_taskAddress">Task Address</string>
+    <string name="releaseTask_taskAddress_content">taskAddress</string>
+    <string name="releaseTask_message">Task Details</string>
+    <string name="releaseTask_message_content">message</string>
+
+    <!-- task detail -->
+    <string name="task_content">Task Content</string>
+    <string name="request_users">Request users</string>
+</resources>

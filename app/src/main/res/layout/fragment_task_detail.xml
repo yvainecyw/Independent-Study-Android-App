@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaskDetailFragment">
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20sp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="@string/releaseTask_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="bottom|right"
+            android:textSize="14sp"
+            android:text="NT$ " />
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom|left"
+            android:layout_marginEnd="18sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/releaseTask_salary_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_releaseTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/releaseTask_bg"
+        android:layout_weight="18" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_releaseUserID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/releaseTask_textContent_bg"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_releaseUserID_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="13sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/releaseUserID_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|bottom"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="@string/releaseTask_userID" />
+
+                    <TextView
+                        android:id="@+id/release_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:textSize="16sp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_releaseTask_message"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="13sp"
+                    android:src="@drawable/ic_release_task_message"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_receiveUserID_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/receiveUserID_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|bottom"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="@string/receiveTask_userID" />
+
+                    <TextView
+                        android:id="@+id/receive_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:textSize="16sp"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_receiveTask_message"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="13sp"
+                    android:src="@drawable/ic_receive_task_message"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_releaseTime_and_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/releaseTask_textContent_bg"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_releaseTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="13sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/releaseTime_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|bottom"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="起始時間" />
+
+                <TextView
+                    android:id="@+id/taskStartDataTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:textSize="16sp"
+                    android:text="releaseTaskStartTime" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_releaseTime_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="13sp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/releaseTime_title_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|bottom"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="截止時間" />
+
+                <TextView
+                    android:id="@+id/taskEndDataTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:textSize="16sp"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_taskAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/releaseTask_textContent_bg"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_taskAddress_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="13dp"
+                android:background="@color/releaseTask_textContent_bg"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/taskAddress_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|bottom"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/releaseTask_taskAddress" />
+
+                <TextView
+                    android:id="@+id/taskAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:textSize="16sp"
+                    android:text="@string/releaseTask_taskAddress_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:background="@color/releaseTask_textContent_bg"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/image_map"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_release_task_map"/>
+
+                <TextView
+                    android:id="@+id/textView_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="看地圖" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="13dp"
+            android:background="@color/releaseTask_textContent_bg"
+            android:layout_marginTop="5dp"
+            android:layout_weight="13">
+
+            <TextView
+                android:id="@+id/textView_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|bottom"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/releaseTask_message" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="@string/releaseTask_message_content"
+                android:layout_weight="13" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

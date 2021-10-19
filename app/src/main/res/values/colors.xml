@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#74C69D</color>
+    <color name="colorPrimaryDark">#52B788</color>
+    <color name="colorAccent">#1B4332</color>
+    <color name="navigationBarColor">#B7E4C7</color>
+    <color name="textColorPrimary">#000000</color>
+
+    <!-- Log in 和 Register 背景 -->
+    <color name="dark_green">#52B788</color>
+    <color name="green">#B7E4C7</color>
+
+    <!-- Log in 和 Register 內容 -->
+    <color name="login_register_form_details">#b3000000</color>
+    <color name="login_register_form_details_light">#1a000000</color>
+    <color name="login_register_form_details_medium">#99000000</color>
+    <color name="login_register_form_button">#000000</color>
+
+    <!-- Log in 和 Register social button -->
+    <color name="login_register_button_text">#000000</color>
+
+    <color name="colorLight">#C4F0F5</color>
+
+    <!-- releaseTask details -->
+    <color name="releaseTask_textColor">#000000</color>
+    <color name="releaseTask_bg">#e9ecef</color>
+    <color name="releaseTask_textContent_bg">#ffffff</color>
+    <color name="delete_color">#C40C27</color>
+</resources>

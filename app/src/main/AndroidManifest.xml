@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my_first_application">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ShowChatActivity"
+            android:label="聊天列表"/>
+<!--        // Todo 多國語言-->
+
+        <activity
+            android:name=".CollectTaskActivity"
+            android:label="@string/task"/>
+
+        <activity
+            android:name=".ShowRequestUsersActivity"
+            android:label="@string/request_users"/>
+
+        <activity
+            android:name=".HomePageActivity"
+            android:label="@string/homePage_toolbar_title" />
+        <activity
+            android:name=".ShowTaskActivity"
+            android:label="@string/showTask_toolbar_title" />
+
+        <activity
+            android:name=".TaskDetailActivity"
+            android:label="@string/task_content"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_toolbar_title">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".SignUpActivity" />
+        <activity
+            android:name=".ReleaseTaskActivity"
+            android:label="@string/releaseTask_toolbar_title"
+            android:parentActivityName=".ShowTaskActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/profile_toolbar_title" />
+        <activity
+            android:name=".ChatActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="ChatPage" />
+        <activity
+            android:name=".SignActivity" />
+    </application>
+
+</manifest>
